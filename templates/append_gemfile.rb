@@ -297,6 +297,9 @@ gem 'roo'
 # https://rubygems.org/gems/prawn
 # gem 'prawn'
 
+# https://github.com/magnusvk/counter_culture
+# gem 'counter_culture'
+
 # ==============================================
 # Gems for Development
 # ==============================================

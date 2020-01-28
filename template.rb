@@ -85,6 +85,9 @@ run "cp -r #{template_root}/test/* test/"
 # Run after bundle
 # ================================================
 
+# brew install git-flow
+# git-flow init
+# git https://github.com/nvie/gitflow
 # git :init
 # git :add => "."
 # git :commit => "-a -m 'Initial project commit'"

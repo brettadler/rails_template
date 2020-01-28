@@ -1,6 +1,5 @@
-SEE HERE: https://github.com/Quick-Rails-Apps/standard-app/blob/master/README.md
-
-# rails_template
+**WORK IN PROGRESS**
+# Rails Template
 A template for creating a default rails app with some base configurations.
 
 ## How to Use
@@ -60,15 +59,21 @@ To make this the default Rails application template on your system, create a ~/.
 -m https://raw.githubusercon
 
 
+SEE HERE: https://github.com/Quick-Rails-Apps/standard-app/blob/master/README.md
 
 
 ## Reference
-
-
-## Available commands and docs
 * https://guides.rubyonrails.org/rails_application_templates.html
 * https://apidock.com/rails/v6.0.0/Rails/Generators/AppGenerator
 * https://www.rubydoc.info/github/wycats/thor/Thor/Actions
 * https://guides.rubyonrails.org/generators.html
 * https://github.com/rails/rails/blob/master/railties/lib/rails/generators/actions.rb
 * https://github.com/rails/rails/blob/master/railties/lib/rails/generators/named_base.rb
+
+
+## Contributors
+* **Rose Wiegley** - *Initial work* - [Rails Template](https://github.com/rosew/rails_template)
+* **Brett Adler** - Modified- [Rails Template](https://github.com/brettadler/rails_template)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

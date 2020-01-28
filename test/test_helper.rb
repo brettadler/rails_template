@@ -27,7 +27,6 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
-
   def assert_authentication_failed
     assert_response :found
     assert_redirected_to new_user_session_path
