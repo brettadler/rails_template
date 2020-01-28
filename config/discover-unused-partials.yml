@@ -1,0 +1,11 @@
+# https://github.com/vinibaggio/discover-unused-partials
+
+# List of files that are not reported
+keep:
+  # - app/views/kaminari/*
+
+# # List of dynamically generated partials and their sources
+# dynamic:
+#   app/controllers/user_controller.rb:
+#     - app/views/user/_first_dynamic_partial.html.erb
+#     - app/views/user/_second_dynamic_partial.text.haml

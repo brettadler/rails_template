@@ -1,0 +1,18 @@
+-# Example usage
+-# = f.fields_for :physical_address do |address|
+-#   = render partial: "addresses/form", locals: { address: address, append: "Physical ", label_txt: "Physical " }
+
+.row
+  .col
+    - if defined? label_txt
+      = address.input :street_address, placeholder: "#{append.downcase}address", label: "#{label_txt} Address", autocomplete: "address"
+    - else
+      = address.input :street_address, placeholder: "#{append.downcase}address", autocomplete: "address"
+
+.row
+  .col-md-6
+    = address.input :city, placeholder: "#{append.downcase}city", autocomplete: "city"
+  .col-md-3.col-xs-6
+    = address.input :state_code, collection: Address::US_STATES, input_html: { "data-placeholder": "select a #{append.downcase}state" }, autocomplete: "state", prompt: "select a state"
+  .col-md-3.col-xs-6
+    = address.input :postal_code, placeholder: "#{append.downcase}zip code", input_html: { class: "mask-zip" }, autocomplete: "zip"

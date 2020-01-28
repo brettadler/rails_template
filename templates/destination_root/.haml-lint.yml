@@ -1,0 +1,45 @@
+exclude:
+  # - 'app/views/kaminari/*'
+
+linters:
+
+  ConsecutiveComments:
+    enabled: false
+
+  InlineStyles:
+    enabled: false
+
+  InstanceVariables:
+    enabled: false
+
+  LineLength:
+    enabled: false
+
+  RuboCop:
+    ignored_cops:
+      # suggested to ignore by the folks who created haml-lint
+      - Lint/BlockAlignment
+      - Lint/EndAlignment
+      - Lint/Void
+      - Metrics/BlockLength
+      - Metrics/BlockNesting
+      - Metrics/LineLength
+      - Style/AlignParameters
+      - Style/ElseAlignment
+      - Style/EndOfLine
+      - Style/FileName
+      - Layout/FinalNewline
+      - Style/FrozenStringLiteralComment
+      - Style/IfUnlessModifier
+      - Style/IndentationWidth
+      - Style/Next
+      - Layout/TrailingBlankLines
+      - Style/TrailingWhitespace
+      - Style/WhileUntilModifier
+      # our own additions
+      - Style/StringLiterals
+      - Style/CharacterLiteral
+      - Style/WordArray
+
+  ViewLength:
+    enabled: false

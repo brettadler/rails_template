@@ -1,0 +1,123 @@
+// =========================================================
+// Font Formatting
+// =========================================================
+
+.bigger-font {
+  font-size: 1.25em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.heavy-font {
+  font-weight: 500;
+}
+
+.light-font {
+  font-weight: 300;
+}
+
+.smaller-font {
+  font-size: .75em;
+}
+
+// =========================================================
+// Colors
+// =========================================================
+
+.gray-text {
+  color: rgba(0, 0, 0, .4);
+}
+
+.green {
+  color: $green;
+}
+
+.red {
+  color: $red;
+}
+
+.white {
+  color: $white;
+}
+
+.white-background {
+  background: $white;
+}
+
+// =========================================================
+// General
+// =========================================================
+
+.clear {
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.padded {
+
+  padding: 1em;
+
+  &-medium {
+    padding: 1.5em;
+  }
+
+  &-wide {
+    padding: 2em;
+  }
+
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// =========================================================
+// Printing
+// =========================================================
+
+@media print {
+
+  .no-print,
+  .no-print * {
+    // scss-lint:disable ImportantRule
+    display: none !important;
+  }
+
+  .printable-section {
+    page-break-before: always;
+  }
+
+}
+
+// =========================================================
+// Images
+// =========================================================
+
+.image-thumbnail {
+  margin: 1em;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.image-container {
+
+  max-width: 100%;
+
+  .image {
+    width: 100%;
+  }
+
+}

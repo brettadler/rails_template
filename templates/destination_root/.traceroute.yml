@@ -1,0 +1,18 @@
+ignore_unused_routes:
+# Third party tools
+- ^devise\/
+- ^omniauth_callbacks
+- ^rails_admin\/
+
+# app specific code
+
+ignore_unreachable_actions:
+
+# Third party tools
+- ^ckeditor\/
+- ^devise\/
+- ^omniauth_callbacks
+- ^passwords
+- ^rails_admin\/
+
+# app specific code

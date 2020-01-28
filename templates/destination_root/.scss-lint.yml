@@ -1,0 +1,32 @@
+# https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
+
+exclude:
+  - 'vendor/*'
+  - 'app/assets/stylesheets/vendor/*'
+  - 'coverage/*'
+
+linters:
+
+  NestingDepth:
+    enabled: false
+
+  PlaceholderInExtend:
+    enabled: false
+
+  PropertyUnits:
+    global: ['em', 'rem', '%','px', 'vh', 'vw']
+    properties:
+      border: ['px']
+      line-height: ['%', 'em']
+      margin: ['%', 'em', 'rem', 'px']
+      padding: ['%', 'em', 'rem', 'px']
+      font-size: ['em', 'rem', 'px']
+
+  SelectorDepth:
+    enabled: false
+
+  StringQuotes:
+    enabled: false
+
+  ColorVariable:
+    enabled: false

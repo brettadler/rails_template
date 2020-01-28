@@ -1,0 +1,6 @@
+// http://www.coffeelint.org/
+{
+    "max_line_length": {
+        "level": "ignore"
+    }
+}

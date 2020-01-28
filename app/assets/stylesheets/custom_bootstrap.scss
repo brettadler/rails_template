@@ -1,0 +1,158 @@
+// =========================================================
+// Containers
+// =========================================================
+
+.container-narrow {
+  @extend .container;
+  max-width: 600px;
+  width: 100%;
+}
+
+.container-medium {
+  @extend .container;
+  max-width: 900px;
+  width: 100%;
+}
+
+.container-page {
+  margin-top: 1.5em;
+  padding-top: 3em;
+}
+
+// =========================================================
+// Help block
+// =========================================================
+
+.help-block {
+  color: $form-help-text-color;
+  font-size: .9em;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 150%;
+  margin-top: .5em;
+}
+
+// scss-lint:disable QualifyingElement
+span.help-block {
+  color: $form-error-text-color;
+  font-weight: 400;
+}
+
+// =========================================================
+// Buttons
+// =========================================================
+
+.btn-wrap {
+  white-space: normal;
+  // word-break: break-all;
+}
+
+.btn-modal-close {
+  @extend .btn;
+  @extend .btn-outline-secondary;
+  @extend .btn-lg;
+  @extend .btn-block;
+}
+
+.btn-modal-primary {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+  @extend .btn-block;
+}
+
+// =========================================================
+// Jumbotron
+// =========================================================
+
+.jumbotron {
+
+  background: $white;
+  padding-bottom: 2em;
+  padding-top: 2em;
+
+  small {
+    color: $grey-dark;
+  }
+
+  .display-4 {
+
+    font-size: 2.5rem;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 2em;
+    }
+
+  }
+
+}
+
+// =========================================================
+// Forms
+// =========================================================
+
+label {
+  abbr {
+    color: $red;
+  }
+}
+
+.checkbox {
+  input {
+    margin-right: .5em;
+  }
+}
+
+// scss-lint:disable QualifyingElement
+span.radio label {
+
+  @extend .btn;
+  @extend .btn-light;
+
+  margin-right: 2em;
+  padding-right: 2em;
+
+  input {
+    margin-right: 1em;
+  }
+
+}
+
+// scss-lint:disable SelectorFormat
+.form-group.radio_buttons {
+  label {
+    padding-right: 1em;
+  }
+}
+
+// =========================================================
+// Responsive
+// =========================================================
+
+.responsive-padding {
+
+  padding: .5em;
+
+  @include media-breakpoint-up(sm) {
+    padding: 1em;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 1.5em;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 2em;
+  }
+
+}
+
+// =========================================================
+// Bootstrap Table
+// =========================================================
+
+.fixed-table-toolbar {
+  .search {
+    width: 100%;
+  }
+}

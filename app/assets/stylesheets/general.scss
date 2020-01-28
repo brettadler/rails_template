@@ -1,0 +1,17 @@
+// =========================================================
+// Page
+// =========================================================
+
+html {
+
+  font-size: 1em;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.25em;
+  }
+
+}
+
+body {
+  background: $page-background-color;
+}

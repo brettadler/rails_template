@@ -1,0 +1,12 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "Format Validation",
+      "fingerprint": "a21418b38aa77ef73946105fb1c9e3623b7be67a2419b960793871587200cbcc",
+      "message": "Insufficient validation for 'password' using /(?=.*[A-Z])/. Use \\A and \\z as anchors",
+      "file": "app/models/user.rb"
+    }
+  ],
+  "updated": "2016-06-14 14:29:59 -0600",
+  "brakeman_version": "3.3.0"
+}

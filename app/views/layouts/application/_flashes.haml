@@ -1,0 +1,10 @@
+.container
+  - flash.each do |type, msg|
+    - if msg.is_a?(String) && msg.present?
+      .flash-alerts-wrapper
+        .alert{ role: "alert", class: format_alert(type) }
+          %button.close{ type: "button", "data-dismiss" => "alert" } &times;
+          = msg.html_safe
+
+:javascript
+  MyApp.readyFlashes();
